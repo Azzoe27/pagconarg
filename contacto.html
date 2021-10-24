@@ -19,7 +19,7 @@
     <header class="cabecera">
 
         <div class="titulo">
-            <h1 class="conarg">Conocé Argentina</h1>
+          <a href="index.html" class="titleLink"><h1 class="conarg">Conocé Argentina</h1></a>
         </div>
 
     </header>
@@ -31,73 +31,72 @@
     </nav>
 
     <main class="contactoMain">
-        <h1>Contacto</h1>
-      <article class="infoContacto">
+        <h1>Contacto</h1>     <!-- titulo Contacto -->
+      <article class="infoContacto">      <!-- descripción + mapa -->
         <div>
           <p>Por consultas o reclamos podés contactarte a nuestro 
-            <a href="mailto:conoceargturismo@gmail.com?subject=Contacto">correo electrónico</a>.</p>
+            <a href="mailto:conoceargturismo@gmail.com?subject=Contacto" id="mailto">correo electrónico</a>.</p>
           <p>Registrándote en nuestra página vas a recibir la alerta de nuevas regiones disponibles y ofertas.</p>
         </div>
       </article>
 
-      <article class="form">
-        
-        <form action="" name="formulario" method="get">
+      <article class="form">      <!-- formulario -->
+          <form action="" name="formulario" method="get">
+            
+            <div class="formField">       <!-- nombre form -->
+              <label class="labelField"> Nombre: </label> 
+              <input class="inputField" type="text" name="nombre"  maxlength="20" required>
+            </div>
+            
+            <div class="formField">       <!-- apellido form -->
+              <label class="labelField"> Apellido: </label> 
+              <input class="inputField" type="text" name="apellido"  maxlength="20" required>
+            </div>
+
+            <div class="formField">      <!-- edad form -->
+              <label class="labelField"> Edad: </label>  
+              <input class="inputField" type="number" name="edad" maxlength="2" min="16" max="99">
+            </div>
           
-          <div class="formField">       <!-- nombre form -->
-            <label class="labelField"> Nombre: </label> 
-            <input class="inputField" type="text" name="nombre"  maxlength="20" required>
+          <div class="formField">        <!-- genero form -->
+              <label class="labelField"> Género: </label> 
+                <ul class="genreRadio">
+                  <li><input class="inputField" type="radio" name="genero"  value="Hombre" > Hombre</li>
+                  <li><input class="inputField" type="radio" name="genero"  value="Mujer"> Mujer </li>
+                  <li><input class="inputField" type="radio" name="genero" value="nobin"> No binarie</li>
+              </ul>
           </div>
           
-          <div class="formField">       <!-- apellido form -->
-            <label class="labelField"> Apellido: </label> 
-            <input class="inputField" type="text" name="apellido"  maxlength="20" required>
+          <div class="formField">       <!-- email form -->
+            <label class="labelField"> E-mail: </label>  
+            <input class="inputField" type="email" name="email"  maxlength="40" required>
           </div>
 
-          <div class="formField">      <!-- edad form -->
-            <label class="labelField"> Edad: </label>  
-            <input class="inputField" type="number" name="edad" maxlength="2" min="16" max="99">
+        <div>        <!-- botón "enviar" form -->
+              <input id="formButton" type="submit" name="btn" value="Enviar">
           </div>
-        
-        <div class="formField">        <!-- genero form -->
-            <label class="labelField"> Género: </label> 
-              <ul class="genreRadio">
-                <li><input class="inputField" type="radio" name="genero"  value="Hombre" > Hombre</li>
-                <li><input class="inputField" type="radio" name="genero"  value="Mujer"> Mujer </li>
-                <li><input class="inputField" type="radio" name="genero" value="nobin"> No binarie</li>
-            </ul>
-        </div>
-        
-        <div class="formField">       <!-- email form -->
-          <label class="labelField"> E-mail: </label>  
-          <input class="inputField" type="email" name="email"  maxlength="40" required>
-         </div>
 
-       <div>        <!-- botón "enviar" form -->
-            <input id="formButton" type="submit" name="btn" value="Enviar">
-        </div>
-
-        </form>
+          </form>
     </article>
 
   
     </main>
 
     <footer>
-      <div>
-          <a href="https://www.facebook.com" target="_blank">
-              <i class="fab fa-facebook"  aria-hidden="true" style="color: black;"></i>
-          </a>
+      <div id="iconsFooter">      <!-- clase por icon -->
+        <a href="https://www.facebook.com" target="_blank" class="footerLink">  
+            <i class="fab fa-facebook" aria-hidden="true" style="color: white;"></i>
+        </a>
 
-          <a href="https://www.instagram.com" target="_blank"> 
-              <i class="fab fa-instagram" aria-hidden="true" style="color: black;"></i>
-          </a>
-          
-          <a href="https://www.twitter.com" target="_blank">
-              <i class="fab fa-twitter" aria-hidden="true" style="color: black;"></i>
-          </a>
-          
-      </div>
+        <a href="https://www.instagram.com" target="_blank" class="footerLink"> 
+            <i class="fab fa-instagram" aria-hidden="true" style="color: white;" id="iconFooter2"></i>
+        </a>
+        
+        <a href="https://www.twitter.com" target="_blank" class="footerLink">
+            <i class="fab fa-twitter" aria-hidden="true" style="color: white;" id="iconFooter3"></i>
+        </a>
+        
+    </div>
 
       <div>
           &copy;Conocé Argentina 2021

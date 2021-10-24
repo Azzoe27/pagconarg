@@ -29,6 +29,10 @@ p {
         font-size: 3em;
     }
 
+        .titleLink {
+            text-decoration: none;
+        }
+
 .navbar {      /* nav > enlaces */
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +76,10 @@ footer {    /* pie de página */
     font-size: 1em;
     font-weight: 700;
 }
+
+    .footerLink {
+        text-decoration: none;
+    }
 
             /* index html */
 
@@ -193,6 +201,10 @@ footer {    /* pie de página */
         text-align: center;
     }
 
+        #mailto {
+            text-decoration: none;
+            color: #74acde;
+        }
                 
 
                 /* formulario start */
@@ -247,9 +259,11 @@ footer {    /* pie de página */
     }
 
     .form {
-        margin: 0;
+        margin-left: 0;
         width: 40%;
-        align-content: flex-start;
+        transform: scaleX(1.2);
+        transform: scaleY(1.1);
+        
     }
 
     
